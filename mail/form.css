@@ -1,0 +1,45 @@
+input, textarea{
+    border: gray 2px solid;
+    min-width: 200px;
+    outline:none;
+}
+.form-item{
+    min-width: 300px;
+}
+
+input[type=submit], input[type=reset]{
+transition: all 0.3s;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+transform: scale(1.2) !important;
+}
+
+input:focus, textarea:focus{
+    border: cadetblue 2px dotted;
+}
+
+#name:invalid~.error_name, #email:invalid~.error_email, #message:invalid~.error_message{
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+#name:valid~.error_name, #email:valid~.error_email, #message:valid~.error_message{
+    transform: scale(0);
+    transition: all 0.3s;
+}
+
+#form:invalid #submit{
+transform: scale(0);
+transition: all 0.3s;
+}
+
+#form:valid #submit{
+   transform: scale(1);
+   transition: all 0.3s;
+}
+
+#form{
+    min-width: 320px;
+}
+

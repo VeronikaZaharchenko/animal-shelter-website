@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+@font-face {
+	font-family: "Playfair Display";  
+	src: url("fonts/PlayfairDisplay-Medium.ttf"); 
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body {
+	background: #f1e3e3 !important;
+}
+
+/* ШАПКА */
+header{
+	position: sticky;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 15px;
+	top: 0;
+	background: rgba(255,255,255,.9);
+	z-index: 10;
+}
+.header-words-1 {
+	font-size: 1.5em !important;    
+	font-family: 'Playfair Display', serif;
+}
+.pod4erk {
+	color: rgba(94, 88, 74, 0.712); 
+	text-decoration: none;
+	transition: .3s ease;
+	width: fit-content;
+}
+   .pod4erk:hover{
+	color: rgb(32, 30, 25);
+	text-decoration: none;
+	background-color: rgba(216, 156, 152, 0.3);
+	border-radius: 6px;
+	transform: scale(1.2);
+   }
+
+.container {
+	display: flex;
+	justify-content: center;
+
+	font-family: 'Raleway', sans-serif;
+	margin: 15px 0;
+}
+.block-swp {
+	width: 85%;
+	gap: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border: 2px solid rgba(128, 128, 128, 0.055);
+	border-radius: 15px;
+	background-color: rgba(128, 128, 128, 0.055);
+
+	box-shadow: 5px 12px 20px #a178789f;
+}
+   @media (max-width: 992px) {
+	.block-swp { width: 100%; }
+   }
+.swiper {
+	width: 50%;
+	height: 340px;
+	margin: 0;
+}
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.block-text {
+	width: 50%;
+	height: 340px;
+	font-size: 24px;
+	text-align: justify;
+	overflow: auto;
+	padding-right: 10px;
+}
+	.block-text::-webkit-scrollbar {
+		width: 5px;
+	}
+	.block-text::-webkit-scrollbar-track {
+		background: rgba(0,0,0,0.04);
+	}
+	.block-text::-webkit-scrollbar-thumb {
+		background: #e2a9a9;
+	}
+.block-text P {
+	color: #d28989;
+	text-align: center;
+	line-height: .8;
+	font-size: 26px;
+	font-weight: bold;
+}
+@media (max-width: 768px) {
+	.block-swp { display: block; }
+	.swiper, .block-text { width: 100%; }
+	.swiper { margin-bottom: 20px; }
+}
+
+.btn-vk {
+	display: inline-block;
+	min-width: 300px;    
+	font-size: 2em;
+	background-color: #ebc0c0bb;
+	border-radius: 15px;
+	transition: all .6s ease;
+
+	color: #b85d5d; 
+	text-decoration: none;
+	transition: .4s ease;
+}
+.btn-vk:hover {
+	color: #a78383; 
+	text-decoration: none;
+}
+
+/* ПОДВАЛ САЙТА */
+footer.bg {
+	background: linear-gradient(#f1e3e3, #d6bbbb);
+}
+footer > p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.footer_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+        /* min-width: 320px; */
+        margin: auto;
+        margin-top: 1em;
+}
+   .footer_item{
+	width: 45%;
+	min-width: 300px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+    }
+    @media (max-width: 768px) {
+	.footer_item{ width: 100%; }
+    }
+
+
+.social IMG {
+	width:26px;
+	margin-right: 5px;
+}
+
+.btn-up {
+	z-index: 100;
+	position: fixed;
+	background-color: #cf9d9d;
+	right: 20px;
+	bottom: 0;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 50px;
+	transition: all .5s;
+}
+   .btn-up::before {
+	content: "";
+	width: 40px;
+	height: 40px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+   }
+   .btn-up_hide {
+	display: none;
+   }
+   @media (hover: hover) and (pointer: fine) {
+	.btn-up:hover {
+		background-color: #d68282; /* цвет заднего фона при наведении */
+	}
+   }

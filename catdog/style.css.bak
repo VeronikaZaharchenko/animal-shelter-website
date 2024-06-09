@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /*header*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /* в приюте */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+@font-face {
+    font-family: "Playfair Display";  
+    src: url("fonts/PlayfairDisplay-Medium.ttf"); 
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;   
+     }
+@font-face {
+    font-family: "Montserrat";  
+    src: url("fonts/Montserrat-Light.ttf"); 
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;   
+    }
+    @font-face {
+        font-family: "Poppins";  
+        src: url("fonts/Poppins-Light.ttf"); 
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;   
+        }
+button, nav li{
+    cursor: pointer !important;
+}
+
+body {
+    /* background-color: rgba(250, 235, 215, 0.616); */
+    background-color: rgba(224, 224, 224, 0.267);
+  }
+  .line {
+    border: none;
+    border-radius: 15px;
+    background-color: #4949496b;
+    color: #33333360;
+    width: 100%;
+    height: 2px;
+    opacity: 0.3;
+  }
+  .line2 {
+    border: none;
+    border-radius: 15px;
+    background-color: #4949496b;
+    color: #33333360;
+    width: 70%;
+    height: 2px;
+    opacity: 0.3;
+  }
+
+
+
+  /* ШАПКА */
+  header {
+    width: 90%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    background: white;
+    opacity: 0.9;
+    z-index: 10;
+  }
+  .header-words-1 {
+    float: left;
+    margin-left: 20%;
+    margin-top: 70px;
+    width: 40%;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Playfair Display', serif;
+    /* background-color: aqua; */
+
+
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    background-color: rgba(223, 223, 223, 0.185);
+}
+.pod4erk {
+    color: rgba(94, 88, 74, 0.712); 
+    text-decoration: none;
+    transition:  .3s ease;
+}
+.pod4erk:hover{
+    color: rgb(32, 30, 25);
+    text-decoration: none;
+    font-size: 26px;
+    
+    background-color: rgba(216, 156, 152, 0.3);
+    border-radius: 6px;
+    padding: 4px;
+}
+.btn-vk {
+  color: #b85d5d; 
+  text-decoration: none;
+  transition:  .4s ease;
+}
+.btn-vk:hover {
+  color: #a78383; 
+  text-decoration: none;
+}
+
+/* ----------------------------------------- */
+
+
+
+
+  .main-left {
+    width: 15%;
+    height: 600px;
+    float: left;
+
+    background-image: url(../img/sledi1.png);
+    background-size: 50%;
+    opacity: 0.2;
+    background-repeat: repeat-y;
+    background-position-x: 50%;
+  }
+  .main-mid {
+    width: 70%;
+    height: 600px;
+    float: left;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .main-mid>div {
+    width: 23%;
+    height: 98%;
+    margin-top: 0.5%;
+  }
+  .block>img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .main-right {
+    width: 15%;
+    height: 600px;
+    float: left;
+
+    background-image: url(../img/sledi2.png);
+    background-size: 50%;
+    opacity: 0.2;
+    background-repeat: repeat-y;
+    background-position-x: 50%;
+  }
+
+  .p1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(73, 73, 73);
+  }
+  .p2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    color: rgba(206, 154, 150, 0.774);
+    font-weight: 700;
+    text-align: center;
+  }
+  .p3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ПОДВАЛ САЙТА */
+footer>p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .btn {
+    align-items: center;
+    min-width: 300px;
+    padding: 0.5em;
+    font-size: 2em;
+    background-color: #ebc0c0bb;
+    border-radius: 15px;
+    margin: auto;
+    display: block;
+    transition: all .6s ease;
+  }
+  .btn:hover {
+    background-color: rgba(216, 156, 152, 0.3);
+  }
+  .soc
+.social {
+    width: 30%;
+    height: 40px;
+    margin-top: 300px;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    /* background-color: aquamarine; */
+  }

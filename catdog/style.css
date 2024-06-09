@@ -1,0 +1,71 @@
+body {
+    background-color: rgba(224, 224, 224, 0.267) !important;
+}
+
+section { position:relative; margin:30px 0; }
+section:before {
+    content:'';
+    left:3%;
+    top:0;
+    width:8%;
+    height:100%;
+    position:absolute;
+    background: url(../img/sledi1.png) repeat-y left top;
+    background-size: 100% auto;
+    opacity: .2;
+}
+section:after {
+    content:'';
+    right:3%;
+    top:0;
+    width:8%;
+    height:100%;
+    position:absolute;
+    background: url(../img/sledi2.png) repeat-y left top;
+    background-size: 100% auto;
+    opacity: .2;
+}
+
+.main-mid {
+    width: 70%;
+    margin:0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    font-family: 'Raleway', sans-serif;
+}
+.main-mid > div {
+    width: 23%;
+    margin: 15px 0;
+}
+@media (max-width: 1024px) {
+	.main-mid > div { width: 48%; }
+}
+@media (max-width: 700px) {
+	.main-mid > div { width: 100%; }
+}
+.block > img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.p1 {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(73, 73, 73);
+}
+.p2 {
+    color: #d28989;
+    text-align: center;
+    line-height: .8;
+    font-size: 26px;
+    font-weight: bold;
+}
+.p3 {
+    font-size: 24px;
+}
+
